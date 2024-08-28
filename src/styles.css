@@ -1,0 +1,260 @@
+body
+{
+    /* background-color: #FCF5EB; */
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    padding: 0;
+}
+header
+{
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+header nav
+{
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.restaurant-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-btn {
+    background-color: #ff6347; /* Tomato color */
+    color: #fff;
+}
+
+.home-btn:hover {
+    background-color: #e5533c;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-btn {
+    background-color: #ffa500; /* Orange color */
+    color: #fff;
+}
+
+.contact-btn:hover {
+    background-color: #e69500;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-btn {
+    background-color: #32cd32; /* LimeGreen color */
+    color: #fff;
+}
+
+.menu-btn:hover {
+    background-color: #28a428;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+#content
+{
+    margin-top: 0em;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#containerWelcome
+{
+    
+    background-image: url(Images/Restaurant.jpg);
+    background-size: cover;
+    padding-top: 6.3em;
+    padding-left: 1.8em;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30% 70%;
+    gap: 3em;
+    column-gap: 9em;
+}
+.welcome
+{
+    color: rgba(240, 255, 255, 0.9);
+}
+.welcome h1
+{
+    margin: 0;
+}
+
+.review
+{
+    color: rgba(240, 255, 255, 0.9);
+}
+
+.review p
+{
+    margin: 0;
+    padding: 0;
+}
+.openingTimes ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 5em 0em 0em 0em;
+    padding: 0;
+    list-style: none;
+    color: rgb(36, 122, 221);
+}
+
+.location p
+{
+    color: azure;
+    padding: 0;
+    margin: 5em 0em 0em 0em;
+}
+
+#containerMenu
+{
+        flex-grow: 1;
+        background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+        background-size: cover;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    padding-top: 8em;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.mainCourses
+{
+    width: 80%;
+}
+
+.servingHeader
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3em;
+}
+.displayFood
+{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 27%));
+    gap: 6em;
+    grid-auto-flow: row;
+}
+
+.dish {
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dish:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.servingImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.servingName {
+    font-size: 1.5em;
+    margin: 10px 0;
+    padding: 0 15px;
+    color: #333;
+}
+
+.description {
+    font-size: 1em;
+    padding: 0 15px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 15px 15px;
+    color: #007BFF;
+}
+
+.sideDishes
+{
+    width: 80%;
+}
+
+.beverages
+{
+    width: 80%;
+}
+
+footer
+{
+    height: 1em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color:#f0f4f8
+}
+
+.containerContact
+{
+    margin: 5em auto;
+}
+.contactHeading
+{
+    text-align: center;
+    font-size: 3em;
+}
+.details ul
+{
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    text-align: center;
+}
+.details ul li
+{
+    text-align: center;
+    font-size: 1.5em;
+}
